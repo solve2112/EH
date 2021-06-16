@@ -1,0 +1,40 @@
+# Nmap 7.91 scan initiated Mon Jun 14 14:48:39 2021 as: nmap -p- -A -sC -T4 -oN smtp.txt 10.10.160.91
+Warning: 10.10.160.91 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.10.160.91
+Host is up (0.13s latency).
+Not shown: 65514 closed ports
+PORT      STATE    SERVICE        VERSION
+22/tcp    open     ssh            OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 62:a7:03:13:39:08:5a:07:80:1a:e5:27:ee:9b:22:5d (RSA)
+|   256 89:d0:40:92:15:09:39:70:17:6e:c5:de:5b:59:ee:cb (ECDSA)
+|_  256 56:7c:d0:c4:95:2b:77:dd:53:d6:e6:73:99:24:f6:86 (ED25519)
+25/tcp    open     smtp           Postfix smtpd
+|_smtp-commands: polosmtp.home, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN, SMTPUTF8, 
+| ssl-cert: Subject: commonName=polosmtp
+| Subject Alternative Name: DNS:polosmtp
+| Not valid before: 2020-04-22T18:38:06
+|_Not valid after:  2030-04-20T18:38:06
+2645/tcp  filtered novell-ipx-cmd
+3907/tcp  filtered imoguia-port
+19293/tcp filtered unknown
+21879/tcp filtered unknown
+25920/tcp filtered unknown
+27940/tcp filtered unknown
+29538/tcp filtered unknown
+33780/tcp filtered unknown
+38070/tcp filtered unknown
+41063/tcp filtered unknown
+41660/tcp filtered unknown
+44342/tcp filtered unknown
+48789/tcp filtered unknown
+49087/tcp filtered unknown
+50498/tcp filtered unknown
+54632/tcp filtered unknown
+57181/tcp filtered unknown
+57308/tcp filtered unknown
+61876/tcp filtered unknown
+Service Info: Host:  polosmtp.home; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Jun 14 15:03:53 2021 -- 1 IP address (1 host up) scanned in 913.30 seconds

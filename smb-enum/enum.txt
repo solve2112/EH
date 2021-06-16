@@ -1,0 +1,1 @@
+# Nmap 7.91 scan initiated Fri Jun 11 19:12:44 2021 as: nmap -A -p- -oN enum.txt 10.10.8.75
