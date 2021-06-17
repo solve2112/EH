@@ -7,3 +7,5 @@
 ```
 rm -rf 'life'
 ```
+
+hahahaha I got a 22% on that test. How do people's brains understand this shit? 
