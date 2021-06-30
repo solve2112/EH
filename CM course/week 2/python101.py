@@ -34,7 +34,7 @@ print(weird.upper()) # uppercase
 print(quote.lower()) # lowercase
 print(quote.title()) # capitalizes every first letter
 
-name = "Tristan"
+name = "Redacted"
 age = 38 #int or declared int(38)
 gpa = 3.7 #float or declared float(3.7)
 
