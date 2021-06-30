@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="Pentesting notes" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1625022227" ts_lastsave="1625025959">
+    <node name="common-network-commands" unique_id="3" prog_lang="markdown" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1625023707" ts_lastsave="1625023973">
+      <rich_text>```
+user files
+```
+
+/etc/passwd
+/etc/shadow
+
+you know what these are
+
+sudo files get logged to /var/log/auth.log
+
+```
+ping
+```
+
+ping -c 3 url
+
+you know this.
+
+```
+arp -a
+```
+
+finding ip address associated with mac address
+
+finding a machine interacting with another machine you may not have known about.
+
+```
+netstat -ano
+```
+
+shows what ports are open and what's running on said ports
+
+```
+route
+```
+
+route - show / manipulate the IP routing table
+
+* Route  manipulates  the  kernel's  IP  routing tables.  Its primary use is to set up static routes to specific hosts or networks via an interface after it has been configured with the ifconfig(8) program.
+
+* When the add or del options are used, route modifies the routing tables.  Without these options, route displays the current contents of the routing tables.
+</rich_text>
+    </node>
+    <node name="neat commands" unique_id="4" prog_lang="markdown" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1625024883" ts_lastsave="1625025211">
+      <rich_text>
+after catting a ping
+
+cat ip.txt | grep "64 bytes" | cut -d " " -f 4 | tr -d ":"
+
+create a ping sweeper to see what's active on the network.
+
+for i in `seq 1 254`; do
+ping -c 1 $1.$i | grep "64 bytes" | cut -d " " -f 4 | tr -d ":" &amp;
+done
+
+using the ampersand vs the semicolon allows threading.</rich_text>
+    </node>
+    <node name="Python-101" unique_id="5" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1625025959" ts_lastsave="1625025959"/>
+  </node>
+</cherrytree>
