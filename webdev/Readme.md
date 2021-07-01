@@ -15,3 +15,5 @@ hahahaha I got a 22% on that test. How do people's brains understand this shit?
 ## UPDATE
 
 I left the course in favor of pursing a cybersecurity role. The thought of writing code like that for years crippled me with anxiety.
+
+![I like this meme](https://raw.githubusercontent.com/solve2112/EH/main/webdev/3nm44.jpg)
