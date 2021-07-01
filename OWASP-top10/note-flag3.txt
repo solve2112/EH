@@ -1,0 +1,9 @@
+flag{fivefourthree}
+0
+I am noot!
+
+1
+2
+3
+4
+5
